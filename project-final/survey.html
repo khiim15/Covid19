@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Covid-19</title>
+
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="theme/eventre-free/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="theme/eventre-free/plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link href="theme/eventre-free/css/style.css" rel="stylesheet">
+  
+  
+</head>
+
+<body class="body-wrapper">
+
+
+  <!--========================================
+=            Navigation Section            =
+=========================================-->
+
+  <nav class="navbar main-nav border-less fixed-top navbar-expand-lg">
+    <div class="container-fluid p-0">
+
+      <a class="navbar-brand">
+        <div class="covid">
+          <h1>Covid-19</h1>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span>/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="survey.html">Survey<span>/</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--====  End of Navigation Section  ====-->
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <div class="question">
+    <h2>แบบสอบถาม สำหรับคัดกรองโรคไวรัสโคโรนา (COVID-19)</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="jumbotron">
+          <div class="container">
+            <div class="col">
+              <p class="lead">
+                <form action="#" id="mainform" novalidate>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputfname">ชื่อ</label>
+                      <div class="col-sm-10">
+                        <input type="FName" required class="form-control" id="inputFName" placeholder="ชื่อ">
+                        <div class="valid-feedback">ถูกต้อง</div>
+                        <div class="invalid-feedback">กรุณากรอกใหม่</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputlname">นามสกุล</label>
+                      <div class="col-sm-10">
+                        <input type="LName" required class="form-control" id="inputLName" placeholder="นามสกุล">
+                        <div class="valid-feedback">ถูกต้อง</div>
+                        <div class="invalid-feedback">กรุณากรอกใหม่</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputtel">เบอร์โทรศัพท์</label>
+                      <div class="col-sm-10">
+                        <input type="text" pattern="[0-9]{3}-[0-9]{7}" required name="tel" id="tel" class="form-control"
+                          placeholder="เบอร์โทรศัพท์">
+                        <div class="valid-feedback">ถูกต้อง</div>
+                        <div class="invalid-feedback">กรุณากรอกใหม่</div>
+                      </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputidcard">เลขบัตรประชาชน</label>
+                      <div class="col-sm-10">
+                        <input type="text" pattern="[0-9]{1}-[0-9]{2}-[0-9]{2}-[0-9]{5}-[0-9]{2}-[0-9]{1}" required
+                          name="idcard" id="idcard" class="form-control" placeholder="เลขบัตรประชาชน">
+                        <div class="valid-feedback">ถูกต้อง</div>
+                        <div class="invalid-feedback">กรุณากรอกใหม่</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mt-2">
+                    <label for="inputadress">ที่อยู่</label>
+                    <div class="col-6">
+                      <input type="text" required name="address" id="address" class="form-control"
+                        placeholder="ที่อยู่">
+                      <div class="valid-feedback">ถูกต้อง</div>
+                      <div class="invalid-feedback">กรุณากรอกใหม่</div>
+                    </div>
+                  </div>
+            </div>
+
+
+            <div style="text-align:left;">คุณมีอาการดังต่อไปนี้หรือไม่</div>
+            <div class="form-group row">
+              <label for="" class="col-sm-6 col-form-label">1.ไอ/เจ็บคอ</label>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="choice1" id="yes" value="checkedValue">
+                    ใช่ &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="choice1" id="no" value="checkedValue">
+                    ไม่ใช่
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-sm-6 col-form-label">2.มีน้ำมูก</label>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="choice2" id="yes" value="checkedValue">
+                    ใช่ &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="choice2" id="no" value="checkedValue">
+                    ไม่ใช่
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-sm-6 col-form-label">3.หายใจเหนื่อย หรือ หายใจลำบาก</label>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="choice3" id="yes" value="checkedValue">
+                    ใช่ &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="choice3" id="no" value="checkedValue">
+                    ไม่ใช่
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="" class="col-sm-6 col-form-label">4.
+                คุณมีอาการใดๆที่มีอยู่ซึ่งจะทำให้ระบบภูมิคุ้มกันของคุณอ่อนแอลง</label>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="choice4" id="yes" value="checkedValue">
+                    ใช่ &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="radio" name="choice4" id="no" value="checkedValue">
+                    ไม่ใช่
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div style="text-align:left;">ในช่วง 14 วันที่ผ่านมาคุณเดินทางหรือ แวะผ่าน ในประเทศ*ใดๆด้านล่างหรือไม่ ? โปรดระบุ</div>
+              <div class="col">
+                <div class="form-check form-check-inline">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="country" id="china" value="checkedValue">
+                    China (จีน) &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="checkbox" name="country" id="southkorea" value="checkedValue">
+                    South Korea
+                    (เกาหลีใต้) &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="checkbox" name="country" id="macao" value="checkedValue">
+                    Macao (มาเก๊า) &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="checkbox" name="country" id="italy" value="checkedValue">
+                    Italy (อิตาลี) &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="checkbox" name="country" id="hongkong" value="checkedValue">
+                    Hong Kong (ฮ่องกง) &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input class="form-check-input" type="checkbox" name="country" id="iran" value="checkedValue">
+                    Iran (อิหร่าน)
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <button type="submit" class="btn btn-primary" id="submit" onclick="document.location = 'index.html'">ส่งข้อมูล</button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    </p>
+  </div>
+  </div>
+
+
+
+
+
+  <!-- JAVASCRIPTS -->
+  <!-- jQuey -->
+  <script src="theme/eventre-free/plugins/jquery/jquery.js"></script>
+  
+  <!-- Bootstrap 4 -->
+  <script src="theme/eventre-free/plugins/bootstrap/js/bootstrap.min.js"></script>
+  
+  <script src="js/custom.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

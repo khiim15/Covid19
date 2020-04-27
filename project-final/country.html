@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>COVID-19</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- PLUGINS CSS STYLE -->
+  <!-- Bootstrap -->
+  <link href="theme/eventre-free/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="theme/eventre-free/plugins/font-awsome/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link href="theme/eventre-free/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper">
+  <!--========================================
+=            Navigation Section            =
+=========================================-->
+
+  <nav class="navbar main-nav fixed-top navbar-expand-lg ">
+    <div class="container">
+
+      <a class="navbar-brand">
+        <div class="covid">
+          <h1>Covid-19</h1>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span>/</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="survey.html">Survey<span>/</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--====  End of Navigation Section  ====-->
+  <br></br>
+  <br></br>
+  <br></br>
+  <div class="row" style="margin-top: 20px; margin-inline-start: 20%;">
+
+  <div class="card text-white bg-warning mb-3" style="max-width: 18rem; margin-left: 20px;">
+    <div class="card-header">ผู้ติดเชื้อ</div>
+    <div class="card-body">
+      <h5 class="card-title">ราย</h5>
+      <p class="card-text">จำนวนผู้เสียชีวิตจากรายงานที่รวบรวม</p>
+    </div>
+  </div>
+
+
+  <div class="card text-white bg-danger mb-3" style="max-width: 18rem; margin-left: 20px;">
+    <div class="card-header">ผู้เสียชีวิต</div>
+    <div class="card-body">
+      <h5 class="card-text">...ราย</h5>
+      <p class="card-text">จำนวนผู้เสียชีวิตจากรายงานที่รวบรวม</p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-success mb-3" style="max-width: 18rem; margin-left: 20px;">
+    <div class="card-header">รักษาหาย</div>
+    <div class="card-body">
+      <h5 class="card-title">...ราย</h5>
+      <p class="card-text">จำนวนผู้เสียชีวิตจากรายงานที่รวบรวม</p>
+    </div>
+  </div>
+
+</div>
+  
+  <div class="container">
+    <h2 id="country"></h2>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col" class="bg-info text-center">Date</th>
+          <th scope="col" class="bg-warning text-center">Confirmed</th>
+          <th scope="col" class="bg-danger text-center">Deaths</th>
+          <th scope="col" class="bg-success text-center">Recovered</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- jQuey -->
+  <script src="theme/eventre-free/plugins/jquery/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap 4 -->
+  <script src="theme/eventre-free/plugins/bootstrap/js/bootstrap.min.js"></script>  <script src="country.js"></script>
+
+</body>
+
+</html>
